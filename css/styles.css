@@ -155,7 +155,7 @@ body {
         padding: 10px;
     }
     .wrapper article .topimg {
-        background: url('/images/drawers.jpg') no-repeat;
+        background: url('../images/drawers.jpg') no-repeat;
         background-size: cover;
         background-position: center;
         height: 100%;
