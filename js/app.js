@@ -1,7 +1,5 @@
 const shareBtn = document.querySelector('article')
 
-console.log(window.innerWidth)
-
 shareBtn.addEventListener('click', (e) => {
     if(window.innerWidth < 550){
         if(e.target.id == 'sharebtn'){
@@ -20,8 +18,17 @@ shareBtn.addEventListener('click', (e) => {
             const textBlock = document.querySelector('.text')
             textBlock.style.margin = '0'
         }
-    }else{
-        console.log('grande')
+    }else if(window.innerWidth > 550){
+        if(e.target.classList.value == 'icon-arrow sharebtn'){
+            const socialDiv = document.querySelector('.fw-social-share')
+            socialDiv.style.display = 'grid'
+            const socialArrow = document.getElementById('sharebtn')
+            socialArrow.classList = 'icon-arrow sharebtn enabled'
+        }else if(e.target.classList.value == 'icon-arrow sharebtn enabled'){
+            const socialDiv = document.querySelector('.fw-social-share')
+            socialDiv.style.display = 'none'
+            const socialArrow = document.getElementById('sharebtn')
+            socialArrow.classList = 'icon-arrow sharebtn'
+        }
     }
 })
-
