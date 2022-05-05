@@ -11,5 +11,4 @@ Thanks for checking out this front-end coding challenge.
 **To do this challenge, you need a basic understanding of HTML, CSS and a tiny bit of JavaScript.**
 
 ## What I learned with this Challenge?
-I made this challenge Mobile First and it was nice and easy to manage the media queries.
-I also combine FLEXBOX + CSS GRIDS 
+I made this challenge Mobile First and it was nice and easy to manage the media queries. And also combine **CSS grids with flexbox**. On **JavaScript**, I added some interactive actions on the share button to show some options on the website view and hide some elements on the mobile view.
