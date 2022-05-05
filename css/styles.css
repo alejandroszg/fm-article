@@ -10,17 +10,20 @@ body {
     font-family: 'Manrope', sans-serif;;
     font-size: 13px;
     height: 100vh;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 /*----------  Article  ----------*/
-.wrapper {
+main .wrapper {
     width: 90%;
+    margin: 0 auto;
+
 }
 
-.wrapper article {
+main .wrapper article {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -33,18 +36,18 @@ body {
     position: relative;
 }
 
-.wrapper article .topimg {
+main .wrapper article .topimg {
     height: 225px;
     overflow: hidden;
     border-radius: 1em 1em 0 0;
 }
 
-.wrapper article .topimg img{
+main .wrapper article .topimg img{
     width: 100%;
     margin-bottom: 20px;
 }
 
-.wrapper article .bodyart .text h3 {
+main .wrapper article .bodyart .text h3 {
     font-size: 18px;
     line-height: 28px;
     font-weight: bold;
@@ -53,7 +56,7 @@ body {
     margin: 0;
 }
 
-.wrapper article .bodyart .text p {
+main .wrapper article .bodyart .text p {
     font-size: 14px;
     line-height: 20px;
     margin: 0;
@@ -61,34 +64,34 @@ body {
     color: var(--activebg);
 }
 
-.wrapper article .bodyart .info {
+main .wrapper article .bodyart .info {
     display: flex;
     align-items: center;
     padding: 10px 25px;
     position: relative;
 }
 
-.wrapper article .bodyart .info .avatar {
+main .wrapper article .bodyart .info .avatar {
     width: 20%;
     max-width: 100px;
     border-radius: 50%;
 }
 
-.wrapper article .info .name {
+main .wrapper article .info .name {
     color: var(--activebg);
-    margin: 0;
-    padding: 0 0 0 15px;
+    margin: 0 14px;
+    /* padding: 0 0 0 15px; */
     font-weight: bold;
 }
 
-.wrapper article .info .date {
+main .wrapper article .info .date {
     color: var(--activebg);
-    margin: 0;
-    padding: 0 0 0 15px;
+    margin: 0 14px;
+    /* padding: 0 0 0 15px; */
 }
 
 
-.wrapper article .info .icon-arrow {
+main .wrapper article .info .icon-arrow {
     position: absolute;
     right: 10%;
     background: var(--bgcolor);
@@ -96,7 +99,7 @@ body {
     border-radius: 50%;
 }
 
-.wrapper article .social-share {
+main .wrapper article .social-share {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
@@ -114,7 +117,7 @@ body {
     right: 0;
 }
 
-.wrapper article .social-share .sharetext {
+main .wrapper article .social-share .sharetext {
     padding: 0;
     letter-spacing: 2px;
     color: #FFFFFF;
@@ -123,7 +126,7 @@ body {
     font-size: 12px;
 }
 
-.wrapper article .social-share .fa-share {
+main .wrapper article .social-share .fa-share {
     background: var(--darkblue);
     padding: 10px;
     border-radius: 50%;
@@ -149,37 +152,37 @@ body {
 /*----------  MEDIA QUERIES  ----------*/
 
 @media screen and (min-width: 550px){
-    .wrapper article {
+    main .wrapper article {
         grid-template-columns: .5fr 1fr;
         grid-template-rows: 1fr;
         max-width: 700px;
     }
-    .wrapper article .topimg img{
+    main .wrapper article .topimg img{
         display: none;
     }
-    .wrapper article .bodyart {
+    main .wrapper article .bodyart {
         padding: 10px;
     }
-    .wrapper article .topimg {
+    main .wrapper article .topimg {
         background: url('../images/drawers.jpg') no-repeat;
         background-size: cover;
         background-position: center;
         height: 100%;
         border-radius: 1em 0 0 1em;
     }
-    .wrapper article .bodyart .info {
+    main .wrapper article .bodyart .info {
         padding: 10px 10px 0 10px;
     }
 
-    .wrapper article .bodyart .info .name {
+    main .wrapper article .bodyart .info .name {
         word-break: break-all;
         width: 100%;
     }
     
-    .wrapper article .bodyart .info .avatar {
+    main .wrapper article .bodyart .info .avatar {
         max-width: 70px;
     }
-    .wrapper article .info .fw-social-share {
+    main .wrapper article .info .fw-social-share {
         background: var(--activebg);
         width: 220px;
         border-radius: 1em;
@@ -197,7 +200,7 @@ body {
         display: none;
     }
     
-    .wrapper article .info .fw-social-share:before {
+    main .wrapper article .info .fw-social-share:before {
         content: "";
         position: absolute;
         width: 0;
